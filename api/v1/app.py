@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-'''Contains a Flask web application API.
+'''Create Flask app; and register the blueprint app_views to Flask instance app.
 '''
-import os
+import os import getenv
 from flask import Flask, jsonify
 from flask_cors import CORS
-
 from models import storage
 from api.v1.views import app_views
 
